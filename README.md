@@ -42,18 +42,44 @@ This repository analyzes climate trends, seasonal variations, and extreme weathe
 
 ---
 
-## Repository Structure
-
 ## **Repository Structure**
 climate-challenge-week0/
-├── .github/workflows/ # CI/CD configuration
-├── data/ # Raw and cleaned CSV files (git-ignored)
-├── notebooks/ # Jupyter notebooks for EDA and comparison
-├── scripts/ # Utility scripts
-├── tests/ # Unit tests
-├── .gitignore
-├── requirements.txt
-└── README.md
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                    # GitHub Actions CI pipeline
+│
+├── data/                             # Raw & cleaned CSV files (git-ignored)
+│   ├── ethiopia.csv
+│   ├── ethiopia_clean.csv
+│   ├── kenya.csv
+│   ├── kenya_clean.csv
+│   ├── nigeria.csv
+│   ├── nigeria_clean.csv
+│   ├── sudan.csv
+│   ├── sudan_clean.csv
+│   ├── tanzania.csv
+│   └── tanzania_clean.csv
+│
+├── notebooks/                        # All Jupyter notebooks
+│   ├── README.md                     # Detailed notebooks documentation
+│   ├── ethiopia_eda.ipynb            # Ethiopia EDA
+│   ├── kenya_eda.ipynb               # Kenya EDA
+│   ├── nigeria_eda.ipynb             # Nigeria EDA
+│   ├── sudan_eda.ipynb               # Sudan EDA
+│   ├── tanzania_eda.ipynb            # Tanzania EDA
+│   └── compare_countries.ipynb       # Cross-country comparison & ranking
+│
+├── scripts/                          # Utility scripts
+│   ├── __init__.py
+│   └── README.md
+│
+├── tests/                            # Unit tests
+│   └── __init__.py
+│
+├── .gitignore                        # Excludes data/, .csv, .ipynb_checkpoints/
+├── requirements.txt                  # Python dependencies
+└── README.md                         # This file
 
 ---
 
@@ -100,7 +126,6 @@ climate-challenge-week0/
 - Extreme event frequency (heat days, dry spells)
 - Statistical testing (ANOVA)
 - Vulnerability ranking
-- Policy recommendations
 
 ---
 
@@ -124,11 +149,9 @@ climate-challenge-week0/
 ## CI/CD Pipeline
 
 GitHub Actions runs on every push to `main`:
-- Sets up Python 3.10
+- Sets up Python 3.13.5
 - Installs dependencies from `requirements.txt`
 - Verifies Python version
-
-**Status:** ✅ Passing
 
 ---
 

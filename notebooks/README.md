@@ -56,16 +56,3 @@ This directory contains exploratory data analysis (EDA) notebooks for five East 
 - Forward-filled missing weather variables
 
 ---
-
-## CI/CD Pipeline
-
-GitHub Actions runs on every push to `main`:
-- Sets up Python 3.10
-- Installs dependencies from `requirements.txt`
-- Verifies Python version
-
-**Status:** ✅ Passing
-
----
-
-## Dependencies
