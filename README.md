@@ -43,6 +43,8 @@ This repository analyzes climate trends, seasonal variations, and extreme weathe
 ---
 
 ## **Repository Structure**
+
+```text
 climate-challenge-week0/
 │
 ├── .github/
@@ -79,8 +81,8 @@ climate-challenge-week0/
 │
 ├── .gitignore                        # Excludes data/, .csv, .ipynb_checkpoints/
 ├── requirements.txt                  # Python dependencies
-└── README.md                         # This file
-
+└── README.md                         # Project documentation
+```
 ---
 
 ## **Environment Setup**
